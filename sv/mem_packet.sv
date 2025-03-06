@@ -10,6 +10,7 @@ rand bit [7:0] payload[];
 
 
 constraint length {length == payload.size(); }
+constraint invalide_inst {inst  inside  {001,00,00,00}; } //
 
 
 
